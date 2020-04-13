@@ -1,0 +1,482 @@
+/*!
+ * Bootstrap - portfolio v1.0.0 ()
+ * Copyright 2020-2020 Baldeep Kaur
+ */
+
+#mainNav .nav-link,
+#leftNav .nav-link,
+#rightNav .nav-link {
+  color: rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 1.5rem 1.25rem;
+  border-bottom: 0.25rem solid transparent;
+}
+
+#mainNav .nav-link:hover,
+#leftNav .nav-link:hover,
+#rightNav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#mainNav .nav-link:active,
+#leftNav .nav-link:active,
+#rightNav .nav-link:active {
+  color: white;
+}
+
+#mainNav .nav-link.active,
+#leftNav .nav-link.active,
+#rightNav .nav-link.active {
+  color: white;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.25rem solid white;
+}
+
+#mainNav .nav-link.active-border-top,
+#leftNav .nav-link.active-border-top,
+#rightNav .nav-link.active-border-top {
+  padding-top: 0.5rem;
+  border-top: 0.25rem solid white;
+}
+
+#mainNav {
+  min-height: 56px;
+  background-color: black;
+  font-size: 2rem;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-brand img {
+  height: 75px;
+  max-height: 100%;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav.navbar-shrink {
+    background-color: black;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+}
+
+#leftNav {
+  font-size: 2rem;
+  z-index: 10;
+  width: 100vh;
+  height: 45px;
+  position: fixed;
+  background: black;
+  -webkit-transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  transform-origin: left top;
+  transform: rotate(-90deg) translateX(-100%);
+}
+
+#leftNav ul.navbar-nav {
+  height: 100%;
+  padding-left: 25%;
+}
+
+#leftNav li {
+  /*padding-top:124px*/
+  margin-right: 20px;
+  float: right;
+  height: 100%;
+  line-height: 45px;
+}
+
+#leftNav li a {
+  color: #fff;
+}
+
+#rightNav {
+  font-size: 2rem;
+  z-index: 10;
+  width: 100vh;
+  height: 45px;
+  position: fixed;
+  background: black;
+  right: 0;
+  -webkit-transform-origin: right top;
+  -webkit-transform: translateX(-45px) rotate(-90deg);
+  transform-origin: right top;
+  transform: translateX(-45px) rotate(-90deg);
+}
+
+#rightNav ul.navbar-nav {
+  height: 100%;
+  padding-left: 25%;
+}
+
+#rightNav li {
+  /*padding-top:124px*/
+  margin-right: 20px;
+  float: right;
+  height: 100%;
+  line-height: 45px;
+}
+
+#rightNav li a {
+  color: #fff;
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 10rem 0;
+  background: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead hr {
+  border-width: 1px;
+  border-style: dashed;
+}
+
+.masthead h1,
+.masthead .h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.masthead h2,
+.masthead .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h2,
+  .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #64a19d;
+}
+
+.btn-primary:hover {
+  background-color: #4f837f;
+}
+
+.btn-primary:focus {
+  background-color: #4f837f;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #467370 !important;
+}
+
+.about-section {
+  height: 100vh;
+  padding-top: 10rem;
+  background: black;
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+  font-size: large;
+  font-weight: 200;
+}
+
+.about-section .self-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  max-width: 400px;
+}
+
+video:focus {
+  outline: unset;
+}
+
+.projects-section {
+  padding: 10rem 0;
+  background: black;
+  color: #fff;
+}
+
+.projects-section .photography, .projects-section .videography {
+  max-height: 300px;
+  width: auto;
+}
+
+.projects-section .width-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.projects-section .featured hr {
+  border-color: #64a19d;
+  border-width: .25rem;
+  width: 30%;
+}
+
+.projects-section .underline {
+  text-decoration: underline;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.work-section {
+  padding: 10rem 0;
+  background: black;
+  color: #fff;
+}
+
+.work-section .photography, .work-section .videography {
+  max-height: 300px;
+  width: auto;
+}
+
+.work-section .width-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.work-section .external-link i {
+  font-size: large;
+}
+
+.work-section .featured hr {
+  border-color: #64a19d;
+  border-width: .25rem;
+  width: 30%;
+}
+
+.work-section .underline {
+  text-decoration: underline;
+}
+
+.work-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .work-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.work-section .work-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .work-section .work-text {
+    padding: 7rem;
+  }
+  .work-section .work-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section {
+  padding: 10rem 0 0;
+  background: black;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #64a19d;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: #fff;
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+  background: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #64a19d;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.content {
+  margin: 0 45px 0 45px;
+}
